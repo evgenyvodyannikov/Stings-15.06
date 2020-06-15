@@ -94,6 +94,7 @@
             this.закрытьToolStripMenuItem.Name = "закрытьToolStripMenuItem";
             this.закрытьToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.закрытьToolStripMenuItem.Text = "Закрыть";
+            this.закрытьToolStripMenuItem.Click += new System.EventHandler(this.закрытьToolStripMenuItem_Click);
             // 
             // функцииToolStripMenuItem
             // 
@@ -121,6 +122,7 @@
             this.найтиЧислоГруппБуквToolStripMenuItem.Name = "найтиЧислоГруппБуквToolStripMenuItem";
             this.найтиЧислоГруппБуквToolStripMenuItem.Size = new System.Drawing.Size(327, 26);
             this.найтиЧислоГруппБуквToolStripMenuItem.Text = "Найти число групп букв ";
+            this.найтиЧислоГруппБуквToolStripMenuItem.Click += new System.EventHandler(this.найтиЧислоГруппБуквToolStripMenuItem_Click);
             // 
             // определитьДлинуГруппыЦифрToolStripMenuItem
             // 
