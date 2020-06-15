@@ -54,16 +54,43 @@ namespace Строки_15._06
                 char[] ss = split[i].ToCharArray();
                 for (int j = 0; i < ss.Length; j++)
                 {
-                    if (ss[j] >= '0' && ss[j] <= '9')
+                    if (ss[j] >= 'A' && ss[j] <= 'Z')
                     {
-                        break;
+                        
                     }
+                    else
+                    { break; }
                 }
             }
             //string output = "";
             //for (int i = 0; i < split.Length; i++)
             //    output += split[i];
             //MessageBox.Show(output);
+        }
+
+        private void определитьДлинуГруппыЦифрToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int k = 0;
+            int max = 0;
+            s = textBox1.Text;
+            string[] split = s.Split(new Char[] { ' ', ',', '.', ':', '\t' });
+            for (int i = 0; i < split.Length; i++)
+            {
+                char[] ss = split[i].ToCharArray();
+                for (int j = 0; j < ss.Length; j++)
+                {
+                    if (ss[j] >= '0' && ss[j] <= '9')
+                    {
+                        k++;
+                    }
+                    else
+                    { break; }
+                }
+                if (k >= max)
+                { max = k; }
+                k = 0;
+            }
+            MessageBox.Show(max.ToString());
         }
     }
 }

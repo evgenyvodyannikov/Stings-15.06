@@ -127,6 +127,7 @@
             this.определитьДлинуГруппыЦифрToolStripMenuItem.Name = "определитьДлинуГруппыЦифрToolStripMenuItem";
             this.определитьДлинуГруппыЦифрToolStripMenuItem.Size = new System.Drawing.Size(327, 26);
             this.определитьДлинуГруппыЦифрToolStripMenuItem.Text = "Определить длину группы цифр";
+            this.определитьДлинуГруппыЦифрToolStripMenuItem.Click += new System.EventHandler(this.определитьДлинуГруппыЦифрToolStripMenuItem_Click);
             // 
             // Form1
             // 
