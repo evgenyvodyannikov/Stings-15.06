@@ -49,7 +49,7 @@ namespace Строки_15._06
             int countsigns = 0;
             int lettersinword = 0;
             int signsinword = 0;
-            string[] split = s.Split(new Char[] { ' ', ',', '.', ':', ';', '(', ')', '=', '_', '\t' });
+            string[] split = s.Split(new Char[] { ' ', ',', '.', ':', ';', '(', ')', '=', '_', '«', '»', '\t' });
             for (int i = 0; i < split.Length; i++)
             {
                 char[] ss = split[i].ToCharArray();
@@ -77,7 +77,7 @@ namespace Строки_15._06
             int k = 0;
             int max = 0;
             s = textBox1.Text;
-            string[] split = s.Split(new Char[] { ' ', ',', '.', ':', ';', '(', ')', '=', '_', '\t' });
+            string[] split = s.Split(new Char[] { ' ', ',', '.', ':', ';', '(', ')', '=', '_', '«', '»', '\t' });
             for (int i = 0; i < split.Length; i++)
             {
                 char[] ss = split[i].ToCharArray();
@@ -102,7 +102,7 @@ namespace Строки_15._06
             int countletters = 0;
             int lettersinword = 0;
             s = textBox1.Text;
-            string[] split = s.Split(new Char[] { ' ', ',', '.', ':', ';', '(', ')', '=', '_', '\t' });
+            string[] split = s.Split(new Char[] { ' ', ',', '.', ':', ';', '(', ')', '=', '_', '«', '»', '\t' });
             for (int i = 0; i < split.Length; i++)
             {
                 char[] ss = split[i].ToCharArray();
@@ -128,6 +128,16 @@ namespace Строки_15._06
         private void закрытьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Пусть дан текст, каждый символ которого может быть латинской буквой, цифрой или одним из знаков «+», «-», «*». Группой букв будем называть такую совокупность последовательно расположенных букв, которой непосредственно не предшествует и за которой непосредственно не следует буква. Аналогично определим группу цифр и группу знаков: а) выясните, верно ли, что в данном тексте больше групп букв, чем групп знаков; b) найдите число таких групп букв, которые начинаются и заканчиваются одной и той же буквой; с) определите длину самой длинной группы цифр", "Задание", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
