@@ -48,14 +48,22 @@ namespace Строки_15._06
             int countletters = 0;
             int countsigns = 0;
             int k = 0;
-            for (int i = 0; i < s.Length; i++)
+            string[] split = s.Split(new Char[] { ' ', ',', '.', ':', '\t' });
+            for (int i = 0; i < split.Length; i++)
             {
-                if (s[i] >= 'A' && s[i] <= 'Z')
-                    k++;
-                else
-                    countletters++;
+                char[] ss = split[i].ToCharArray();
+                for (int j = 0; i < ss.Length; j++)
+                {
+                    if (ss[j] >= '0' && ss[j] <= '9')
+                    {
+                        break;
+                    }
+                }
             }
-            MessageBox.Show(countletters.ToString());
+            //string output = "";
+            //for (int i = 0; i < split.Length; i++)
+            //    output += split[i];
+            //MessageBox.Show(output);
         }
     }
 }
