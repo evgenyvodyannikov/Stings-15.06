@@ -1,0 +1,10 @@
+C:\Users\vodya\OneDrive\Рабочий стол\дз\Stings-15.06\Строки 15.06\Строки 15.06\bin\Debug\Строки 15.06.exe.config
+C:\Users\vodya\OneDrive\Рабочий стол\дз\Stings-15.06\Строки 15.06\Строки 15.06\bin\Debug\Строки 15.06.exe
+C:\Users\vodya\OneDrive\Рабочий стол\дз\Stings-15.06\Строки 15.06\Строки 15.06\bin\Debug\Строки 15.06.pdb
+C:\Users\vodya\OneDrive\Рабочий стол\дз\Stings-15.06\Строки 15.06\Строки 15.06\obj\Debug\Строки 15.06.csprojAssemblyReference.cache
+C:\Users\vodya\OneDrive\Рабочий стол\дз\Stings-15.06\Строки 15.06\Строки 15.06\obj\Debug\Строки_15._06.Form1.resources
+C:\Users\vodya\OneDrive\Рабочий стол\дз\Stings-15.06\Строки 15.06\Строки 15.06\obj\Debug\Строки_15._06.Properties.Resources.resources
+C:\Users\vodya\OneDrive\Рабочий стол\дз\Stings-15.06\Строки 15.06\Строки 15.06\obj\Debug\Строки 15.06.csproj.GenerateResource.cache
+C:\Users\vodya\OneDrive\Рабочий стол\дз\Stings-15.06\Строки 15.06\Строки 15.06\obj\Debug\Строки 15.06.csproj.CoreCompileInputs.cache
+C:\Users\vodya\OneDrive\Рабочий стол\дз\Stings-15.06\Строки 15.06\Строки 15.06\obj\Debug\Строки 15.06.exe
+C:\Users\vodya\OneDrive\Рабочий стол\дз\Stings-15.06\Строки 15.06\Строки 15.06\obj\Debug\Строки 15.06.pdb

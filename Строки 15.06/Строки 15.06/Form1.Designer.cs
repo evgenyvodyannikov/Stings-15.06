@@ -28,13 +28,137 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сохранитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.закрытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.функцииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.проверкаНаГруппыБуквToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.найтиЧислоГруппБуквToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.определитьДлинуГруппыЦифрToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // textBox1
+            // 
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Location = new System.Drawing.Point(0, 29);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox1.Size = new System.Drawing.Size(800, 421);
+            this.textBox1.TabIndex = 0;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.файлToolStripMenuItem,
+            this.функцииToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 29);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // файлToolStripMenuItem
+            // 
+            this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.открытьToolStripMenuItem,
+            this.сохранитьToolStripMenuItem,
+            this.закрытьToolStripMenuItem});
+            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(60, 25);
+            this.файлToolStripMenuItem.Text = "Файл";
+            // 
+            // открытьToolStripMenuItem
+            // 
+            this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
+            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.открытьToolStripMenuItem.Text = "Открыть";
+            this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
+            // 
+            // сохранитьToolStripMenuItem
+            // 
+            this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.сохранитьToolStripMenuItem.Text = "Сохранить";
+            this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click);
+            // 
+            // закрытьToolStripMenuItem
+            // 
+            this.закрытьToolStripMenuItem.Name = "закрытьToolStripMenuItem";
+            this.закрытьToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.закрытьToolStripMenuItem.Text = "Закрыть";
+            // 
+            // функцииToolStripMenuItem
+            // 
+            this.функцииToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.проверкаНаГруппыБуквToolStripMenuItem,
+            this.найтиЧислоГруппБуквToolStripMenuItem,
+            this.определитьДлинуГруппыЦифрToolStripMenuItem});
+            this.функцииToolStripMenuItem.Name = "функцииToolStripMenuItem";
+            this.функцииToolStripMenuItem.Size = new System.Drawing.Size(87, 25);
+            this.функцииToolStripMenuItem.Text = "Функции";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // проверкаНаГруппыБуквToolStripMenuItem
+            // 
+            this.проверкаНаГруппыБуквToolStripMenuItem.Name = "проверкаНаГруппыБуквToolStripMenuItem";
+            this.проверкаНаГруппыБуквToolStripMenuItem.Size = new System.Drawing.Size(327, 26);
+            this.проверкаНаГруппыБуквToolStripMenuItem.Text = "Проверка на группы букв";
+            this.проверкаНаГруппыБуквToolStripMenuItem.Click += new System.EventHandler(this.проверкаНаГруппыБуквToolStripMenuItem_Click);
+            // 
+            // найтиЧислоГруппБуквToolStripMenuItem
+            // 
+            this.найтиЧислоГруппБуквToolStripMenuItem.Name = "найтиЧислоГруппБуквToolStripMenuItem";
+            this.найтиЧислоГруппБуквToolStripMenuItem.Size = new System.Drawing.Size(327, 26);
+            this.найтиЧислоГруппБуквToolStripMenuItem.Text = "Найти число групп букв ";
+            // 
+            // определитьДлинуГруппыЦифрToolStripMenuItem
+            // 
+            this.определитьДлинуГруппыЦифрToolStripMenuItem.Name = "определитьДлинуГруппыЦифрToolStripMenuItem";
+            this.определитьДлинуГруппыЦифрToolStripMenuItem.Size = new System.Drawing.Size(327, 26);
+            this.определитьДлинуГруппыЦифрToolStripMenuItem.Text = "Определить длину группы цифр";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem открытьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem сохранитьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem закрытьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem функцииToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem проверкаНаГруппыБуквToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem найтиЧислоГруппБуквToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem определитьДлинуГруппыЦифрToolStripMenuItem;
     }
 }
 
